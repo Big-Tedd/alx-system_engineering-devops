@@ -1,5 +1,4 @@
 #!/bin/bash
-#!/bin/bash
 
 filename='\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)'
 content="Best School\n"
