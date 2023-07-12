@@ -1,10 +1,2 @@
 #!/bin/bash
-water=$WATER
-stir=$STIR
-
-water_base10=$((10#$water))
-stir_base10=#((10#$stir))
-
-result_base10=$((water_base10 + stir_base10))
-
-result
+echo $(printf %o $(($((5#$(echo $WATER | tr 'water' '01234'))) + $((5#$(echo $STIR | tr 'stir.' '01234'))))) | tr '01234567' 'bestchol')
